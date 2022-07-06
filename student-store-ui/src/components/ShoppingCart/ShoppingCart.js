@@ -6,6 +6,7 @@ import codepath from "../../assets/codepath.svg"
 import { formatPrice } from "../../utils/format"
 import { calculateItemSubtotal, calculateTaxesAndFees, calculateTotal } from "../../utils/calculations"
 import "./ShoppingCart.css"
+// import apiClient from "../../services/apiClient"
 
 export default function ShoppingCart({
   user,
@@ -42,6 +43,7 @@ export default function ShoppingCart({
     if (order) {
       navigate("/orders")
     }
+
   }
 
   const cartHasItems = Boolean(Object.keys(cartMapping).length)
